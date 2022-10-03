@@ -1,0 +1,383 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  color: #ffff;
+  font-family: 'Rubik', sans-serif;
+}
+
+html{
+  box-sizing: border-box;
+}
+*, *.after, *:before { box-sizing: inherit;}
+:root {
+  --main-color: #414641;
+  --secondary-color: #adadad;
+
+}
+body{
+  background-color: #020403;
+}
+
+.conte_nav{ 
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-right: 200px;
+}
+.nav_mobile{
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .nav_mobile{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+   .cont_desktop {display: none;}
+}
+.nav{
+ text-decoration: none;
+ font-size: 20px;
+ font-weight:300;
+}
+
+.conte_img{
+  width:  300px;
+  height: 350px;
+  border-radius: 47%;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-image: url(https://ath2.unileverservices.com/wp-content/uploads/sites/5/2018/05/peinado-hacia-atraxxs-hombre4-300x300.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+@media (max-width: 480px) {
+  .conte_img{
+    height: 300px;
+    width: 240px;
+    margin-top: 100px ;
+  }
+  .name{
+    font-size: 25px;
+  }
+
+}
+.name{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 50px ;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.name_sub{
+  font-size: 130px ;
+  font-weight: 500;
+
+}
+
+@media (max-width: 480px) {
+  .name_sub { 
+    font-size: 50px;
+  }
+}
+
+
+
+.sub2_imag{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.img_main{
+ width: 100px;
+}
+@media (max-width: 480px) {
+
+   .img_main{
+    width: 50px;
+
+   }
+}
+
+.habili{
+  color:#ffff;
+  margin-bottom: 20px;
+}
+ .seccion_parraf{
+
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+
+ }
+ .grid_conteiner{
+  display: grid;
+  width: 50vw;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3 , 1fr);
+
+ }
+
+ @media (max-width: 480px){
+     .grid_conteiner{
+      width: 100vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat ( 4, 1fr);
+      height: 800px;
+     }
+ }
+
+
+.conteiner_habilidades{
+grid-column: 1 / 3;
+margin: auto;
+font-size: 50px;
+
+}
+@media (max-width: 480px){
+  .conteiner_habilidades{
+    grid-column: 1 / 1;
+    font-size: 40px;
+    font-weight: 300;
+  }
+}
+
+.cont_img{
+  width: 150px;
+  height: 150px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+div > h4{
+  text-align: center;
+  margin-top:10px ;
+}
+
+.grid_exp{
+width: 60vw;
+height: 500px;
+display: grid;
+margin: 0 auto;
+grid-template-columns: fr ;
+grid-template-rows: repeat(4,fr);
+}
+@media (max-width: 480px) {
+  .grid_exp{
+    width: 85%;
+    margin-right: 0PX;
+    margin-left: 40PX;
+    
+    
+  }
+}
+
+.exp_sub{
+  font-size: 50px ;
+  text-align: center;
+  margin-bottom: 0px;
+  align-self: flex-end;
+  
+}
+
+.exp_flex{
+  border-bottom: 3px solid;
+  display: flex;
+  gap:310px;
+  font-size: 25px;
+  align-items: flex-end; 
+}
+@media (max-width: 480px) {
+    .exp_flex{
+      font-size: 20px;
+      gap: 100px;
+    }
+
+}
+
+
+.exp_linea{
+  margin-top: 3px;
+  padding: 0;
+  align-items: flex-end;
+  
+}
+
+.conte_portaf{
+  width: 80vw;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:  1fr 3fr ;
+  gap:15px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+   .conte_portaf{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    height: 900px;
+    margin-top: 200px;
+   }
+}
+
+.conte_subt{
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  font-size: 50px ;
+  text-align: center;
+  align-self: center;
+
+}
+
+@media (max-width: 480px) {
+  .conte_subt{
+    grid-column: 1 / 1;
+    font-size: 25px;
+    text-align: start;
+  }
+}
+
+.conteiner_foder{
+  width: 40%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px ;
+}
+
+@media (max-width: 480px) {
+  .conteiner_foder{
+      grid-template-columns: 150px 150px;
+  }
+}
+
+
+.conteiner_foder > h2 {
+  
+  grid-column: 1 / 3;
+}
+
+.foder_img{
+margin: 0  auto;
+text-align: center;
+color: red;
+}
+
+.borde_img{
+   border: 2px solid;
+  border-radius: 47%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+.grid_img{
+  height: 40px;
+
+}
+
+
+
+
+.foder_sep{
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+@media (max-width: 480px) {
+  .foder_email{
+    font-size: 10px;
+    padding: 0;
+  }
+ .foder_sep{
+  padding: 0;
+  margin: 0%;
+ }
+}
+.footer_color{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .conteiner{
+  background-color: blueviolet;
+  width: 80%;
+  height: 80vh;
+  padding: 0.1px;
+  margin: 0 auto;
+ 
+}
+
+.absolute{
+  background-color: aquamarine;
+  border: 3px  solid;
+  height: 30%;
+  width: 400px;
+  margin:14px;
+}
+
+
+.cont_1{
+  position: relative;
+  top: 0px;
+}
+.cont_2{
+  position: absolute;
+  bottom: 0%;
+} 
+basoluta necesita una relativa  ene el conteiner para que se base en el conteiner */
