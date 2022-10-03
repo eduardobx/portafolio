@@ -55,7 +55,7 @@ body{
   border-radius: 47%;
   margin: 0 auto;
   margin-top: 60px;
-  background-image: url(https://ath2.unileverservices.com/wp-content/uploads/sites/5/2018/05/peinado-hacia-atraxxs-hombre4-300x300.jpg);
+  background-image: url(./eduardo.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,7 +265,7 @@ grid-template-rows: repeat(4,fr);
 }
 
 .conteiner_foder{
-  width: 100%;
+  width: 50%;
   height: 400px;
   display: grid;
   grid-template-columns: 1fr 1fr ;
@@ -291,7 +291,7 @@ grid-template-rows: repeat(4,fr);
 .foder_img{
 margin: 0  auto;
 text-align: center;
-color: red;
+padding: 0;
 }
 
 .borde_img{
