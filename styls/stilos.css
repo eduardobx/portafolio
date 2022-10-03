@@ -233,6 +233,10 @@ grid-template-rows: repeat(4,fr);
   margin-top: 30px;
 }
 
+.conte_portaf img{
+  width: 100%;
+}
+
 @media (max-width: 480px) {
    .conte_portaf{
     grid-template-columns: 1fr;
@@ -329,6 +333,8 @@ color: red;
 .footer_color{
   text-align: center;
 }
+
+
 
 
 
